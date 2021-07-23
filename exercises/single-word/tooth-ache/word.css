@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background: rgb(25,100,255);
+    color: white;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: -.125em;
+    font-size: 12vw;
+    line-height: .8125;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+    color: #f1f1f1;
+    font-weight: bold;
+}
+
+::selection {
+    color: red;
+    background: transparent;
+}

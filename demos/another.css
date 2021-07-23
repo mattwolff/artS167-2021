@@ -1,0 +1,115 @@
+@font-face {
+    font-family: 'Custom';
+    src: url(../assets/fonts/violet/VioletSans-Regular.otf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+    font-family: 'Custom', 'Helvetica', sans-serif;
+    margin: 0;
+    display: block;
+    position: relative;
+    min-height: 10000px;
+    letter-spacing: -.02em;
+    word-spacing: -0.02em;
+}
+
+h1, p {
+    color: red;
+    border: 1px solid black;
+    height: 200px;
+    /* background: lightblue; */
+    padding: 16px;
+    margin: 0; 
+}
+
+.some-group {
+    color: red;
+}
+
+h1 {
+    position: sticky;
+    top: 0;
+    background: black;
+    color: white
+}
+
+button {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+}
+
+#firstP {
+    position: fixed;
+    top: 20px;
+    right: 30px;
+    background: lightgray;
+    z-index: 1;
+}
+
+#secondP {
+    /* position: relative; */
+    /* bottom: 20px;
+    left: 30px; */
+    background: pink;
+}
+
+#special {
+    color: red;
+}
+
+p .some-group {
+    color: blue;
+}
+
+#scroller {
+    position: fixed;
+    bottom: 12px;
+    left: 12px;
+    display: flex;
+    background: blue;
+    color: white;
+    border-radius: 50%;
+    padding: 12px;
+    width: 80px;
+    height: 80px;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.container {
+    background: lightgrey;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.container .column {
+    width: 50%;
+}
+
+.col4 {
+    width: 100%;
+    background: lightpink;
+}
+.col3 {
+    width: 75%;
+    background: lightseagreen;
+}
+.col2 {
+    width: 50%;
+    background: lightyellow;
+}
+.col1 {
+    width: 25%;
+    background: lightcyan;
+}
+
+/* a bunch more css... */

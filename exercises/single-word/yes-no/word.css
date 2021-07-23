@@ -1,0 +1,59 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background: white;
+    color: white;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: -.125em;
+    -webkit-text-stroke: .125em black;
+    font-size: 12vw;
+    line-height: .8125;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: space-between;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+h1 {
+    margin: 0;
+    padding: .125em;
+    font-weight: normal;
+}
+
+#n, #y {
+    transform-origin: center center;
+    transition: transform 100ms ease;
+}
+
+#y {
+    transform: rotate(0deg);
+}
+
+#n {
+    transform: rotate(180deg);
+}
+
+#y:hover {
+    transform: rotate(-180deg);
+}
+
+#n:hover {
+    transform: rotate(0deg);
+}
+
+
+::selection {
+    color: black;
+    background: transparent;
+}

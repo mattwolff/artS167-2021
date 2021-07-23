@@ -1,0 +1,67 @@
+body {
+    background: lightgrey;
+    font-family: serif;
+}
+
+/* 
+    NAVIGATION */
+
+ nav a {
+    font-size: 14px;
+    padding: 4px;
+}
+
+nav a:hover {
+    background: black;
+    color: white;
+}
+
+nav a:active {
+    background: blue;
+    color: white;
+}
+
+nav a:visited {
+    background: white;
+    color: black;
+}
+
+/* 
+    TYPOPGRAPHY */
+
+#title {
+    font-size: 144px;
+    line-height: .875;
+    letter-spacing: -6px;
+    font-weight: normal;
+    color: black;
+    background: red;
+    padding: 16px 8px;
+    text-align: center;
+}
+
+.headline {
+    color: white;
+    background: red; 
+}
+
+.opinion {
+    font-style: italic;
+    text-transform: uppercase;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    background: red;
+}
+
+
+.fwb {
+    font-weight: bold;
+}
+
+.dark {
+    background: black;
+    color: lime;
+}
