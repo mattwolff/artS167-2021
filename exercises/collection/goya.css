@@ -1,0 +1,109 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    color: #2e2e2e;
+    font-family: Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: -.04em;
+    background: #f1f1f1;
+    margin: 0;
+}
+
+nav {
+    border-top: 1px solid black;
+    padding-top: 12px;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav, .text {
+    width: calc(100% - 4rem);
+    margin: 12px auto;
+}
+
+h1 {
+    margin: 0 auto;
+    transform: translateX(-.7vw);
+    width: calc(100% - 4rem);
+    font-size: 10vw;
+    letter-spacing: -.0666em;
+    line-height: 1;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: all 300ms ease;
+}
+
+nav a:hover {
+    border-bottom: 1px solid black;
+}
+
+.image-wrapper {
+    padding: 12px;
+    margin-bottom: 2rem;
+    background: #2e2e2e;
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    position: relative;
+    white-space: nowrap;
+}
+
+.image-wrapper figure {
+    margin: 0;
+    margin-right: 12px;
+    display: inline-block;
+	white-space: normal;
+	flex-shrink: 0;
+}
+
+.image-wrapper figcaption {
+    color: #f1f1f1;
+}
+
+img {
+    filter: grayscale(1.0);
+    transition: filter 1000ms ease;
+    object-fit: contain;
+    display: inline;
+	max-height: calc(75vh - 4rem);
+}
+
+img:hover {
+    filter: none;
+}
+
+
+.text {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.text figure {
+    margin: 0;
+}
+
+figcaption {
+    font-size: 1.4vw;
+}
+
+
+.text p {
+    font-size: 2.4vw;
+    max-width: 75%;
+    padding-right: 2em;
+}
+
+.text figure img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+}
+

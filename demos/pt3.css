@@ -1,0 +1,123 @@
+:root {
+    --background-color: #f1f1f1;
+    --surface-color: white;
+    --error-color: #B00020;
+    --black: #2e2e2e;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background: var(--background-color);
+    color: white;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: -.125em;
+    font-size: 12vw;
+    line-height: .8125;
+    text-align: center;
+}
+
+.anything {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+    color: #f1f1f1;
+    color: var(--black);
+    font-weight: bold;
+}
+
+::selection {
+    color: red;
+    background: transparent;
+}
+
+
+.rotated {
+    transform: rotate(12deg);
+    
+    /* OR */
+    transform: rotate(.5turn);
+}
+
+.scaled {
+    transform: scale(2.0);
+}
+
+.skewed {
+    transform: skew(12deg, 12deg);
+    /* Same as */
+    transform: skewX(12deg) skewY(deg);
+}
+
+.translated {
+    transform: translate(100px);
+}
+
+.crazy-transformation {
+    transition: transform 300ms ease-in-out;
+    animation: some-animation 1000ms infinite ease-in-out;
+    animation-direction: alternate-reverse;
+}
+
+.crazy-transformation:hover {
+    transform-origin: center;
+    transform: rotate(-12deg) scale(1.5) skew(6deg, 6deg);
+}
+
+nav {
+    font-size: 16px;
+    letter-spacing: 1px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    z-index: 1001;
+    border-bottom: 1px solid black;
+    padding: 8px;
+
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    display: block;
+    margin-right: 12px;
+}
+
+nav a:hover {
+    background: yellow;
+}
+
+@keyframes some-animation {
+    from {
+        background-color: red;
+    }
+    to {
+        background-color: orange;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    nav  {
+        flex-direction: column;
+    }
+
+    nav a {
+        margin-bottom: 6px;
+    }
+}
