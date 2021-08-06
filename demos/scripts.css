@@ -1,0 +1,64 @@
+.dark {
+    background: black;
+    color: white;
+}
+
+body {
+    transition: all 300ms ease-in;
+    background: lightgray;
+    color: darkblue;
+}
+
+body.invert {
+    color: lightgray;
+    background: darkblue;
+}
+
+button {
+    border: none;
+    outline: none;
+    position: fixed;
+    background: lime;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transition: all 100ms ease;
+}
+
+button:hover {
+    background: purple;
+}
+
+#something {
+    bottom: 12px;
+    right: 12px;
+}
+
+#else {
+    bottom: 64px;
+    right: 12px;
+}
+
+.dimensions {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    padding: 12px;
+    font-size: 64px;
+    font-weight: normal;
+    font-style: italic;
+    letter-spacing: -.08em;
+}
+
+h1 {
+    margin: 0;
+    font-weight: normal;
+    font-style: italic;
+    letter-spacing: -.08em;
+    transition: font-size 200ms ease-in-out;
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
