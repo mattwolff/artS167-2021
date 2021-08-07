@@ -1,0 +1,152 @@
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Fone-regular;
+    src: url('font/Formula1-Regular.ttf');
+}
+
+@font-face {
+    font-family: Fone-wide;
+    src: url('font/Formula1-Wide.ttf')
+}
+
+body {
+    font-family: 'Fone-regular', 'Courier New', Courier, monospace;
+    top: 0px;
+    bottom: 0;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    overflow: scroll;
+}
+
+.background-image {
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    display: block;
+    background-image: 
+        url("images/Red\ Water\ Runs\ Deep_\ Driving\ The\ Old\ Spa\ -\ Speedhunters.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    filter: opacity(0.6);
+}
+
+.contents {
+    position: fixed;
+    left: 0;
+    right: 0;
+    /* height:100vh; */
+    z-index: 9999;
+    margin-left: 20px;
+    margin-right: 20px;
+    /* border: 5px solid green; */
+}
+
+.headercenter1 {
+    padding-top: 0px;
+    width: 30%;
+    margin: auto;
+    padding: 0;
+    /* border: 5px solid blue; */
+    color: black;
+    animation: moveText 2s ease-in 1s;
+}
+
+.headercenter2 {
+    padding-top: 0px;
+    width: 30%;
+    margin: auto;
+    padding: 0;
+    /* border: 5px solid grey; */
+    color: black;
+}
+
+h1 {
+    font-size: 88px;
+    margin: 0;
+    font-style: italic;
+    color: black;
+    align-items: center;
+    text-align: center;
+}
+
+h2 {
+    /* background-color: rgb(0, 255, 191); */
+    font-size: 18px;
+    /* border: 5px solid brown; */
+    font-style: italic;
+    color: black;
+    align-items: center;
+    text-align: center;
+}
+
+.betting_odds {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    mix-blend-mode: multiply;
+    width: 90%;
+    /* border: 5px solid green; */
+}
+
+#left, #right {
+    position: fixed;
+    top: 0;
+    width: 25%;
+    height: 100vh;
+    background: transparent;
+    overflow-y: scroll;
+    font-size: 36px;
+}
+
+
+#left {
+    left: 0;
+    padding-left: 20px;
+    /* 20px because of the margin you set on .contents */
+    width: 25%;
+    /* border: 5px solid yellow; */
+}
+
+
+#right {
+    right: 0;
+    padding-right: 20px;
+    /* 20px because of the margin you set on .contents */
+    /* border: 5px solid brown; */
+}
+
+
+#middle {
+    width: 50%;
+    margin: 0 auto;
+    background: transparent;
+    height: calc(100vh - 120px);
+    overflow-y: auto;
+    padding: 0 20px;
+    padding-top: 4em;
+    /* border: 5px solid green; */
+    color: black;
+}
+
+.center {
+    text-align: center;
+    /* border: 5px solid green; */
+}
+
+h3, h4 {
+    font-size: 1em;
+    margin: 0;
+    padding-bottom: 1em;
+    color: rgb(49, 48, 48);
+    font-weight: bold;
+}
+
